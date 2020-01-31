@@ -53,6 +53,13 @@ pre code {
     display: inline-block;
 }
 
+p code {
+    background-color: #eee;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 2px;
+}
+
 /** Screen furniture ********************************************************/
 .li-page-header {
     background-color: #202020;
