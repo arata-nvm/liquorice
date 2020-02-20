@@ -11,12 +11,12 @@
         <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/liquorice.css" />
         <meta property="og:url" content="{{ .Permalink }}">
         <meta property="og:title" content="{{ .Title }} &middot; {{ .Site.Title }}">
-        <meta property="og:image" content="/blog/icon-512x512.png">
+        <meta property="og:image" content="{{ .Site.BaseURL }}/icon-512x512.png">
         <meta name="twitter:card" content="summary">
         <meta property="og:description" content="{{ .Site.Params.description }}">
         <meta name="twitter:site" content="@arata_nvm">
         <meta name="twitter:creator" content="@arata_nvm">
-        <link rel="shortcut icon" href="/blog/favicon.ico" />
+        <link rel="shortcut icon" href="{{ .Site.BaseURL }}/favicon.ico" />
         <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-144-precomposed.png" sizes="144x144" />
         {{ range .AlternativeOutputFormats -}}
             {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
